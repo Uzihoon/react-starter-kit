@@ -23,8 +23,8 @@ touch $_STORE/$1.module.scss
 
 echo "export { default } from './$1';" >> $_STORE/index.tsx
 
-echo "import classNames from 'classnames/bind';" >> $_STORE/$1.tsx
+#echo "import classNames from 'classnames/bind';" >> $_STORE/$1.tsx
 echo "import styles from './$1.module.scss';" >> $_STORE/$1.tsx
-echo "const cx = classNames.bind(styles);" >> $_STORE/$1.tsx
+#echo "const cx = classNames.bind(styles);" >> $_STORE/$1.tsx
 echo "function $1 () { return <div>$1</div> }" >> $_STORE/$1.tsx
 echo "export default $1" >> $_STORE/$1.tsx
